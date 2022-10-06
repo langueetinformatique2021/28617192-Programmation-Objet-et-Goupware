@@ -1,6 +1,6 @@
 package boucles;
 
-public class boucle_post {
+public class boucle_pri {
 	public static void main(String[] args) {
 
 		String s1 = "azerty", s2 = "ytreza";
@@ -10,18 +10,19 @@ public class boucle_post {
 		
 		if (s1.length() == s1.length()) {
 			
-			do {
+			while ((c2 >= 0) && (s1.charAt(c1) == s2.charAt(c2))) {
 				c1++;
 				c2--;
 			}
 			
-			while ((c2 >= 0) && (s1.charAt(c1) == s2.charAt(c2)));
+			
 			if (c2 == -1) {
 				System.out.println("mot miroir");
 				Flag = true;
 			}
 			else Flag = false;
 			System.out.println(Flag);
+				
 			
 		}
 
