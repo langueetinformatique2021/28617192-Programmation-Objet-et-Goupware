@@ -5,14 +5,27 @@ import util.Keyboard;
 public class Carafe {
 	private int contenu_, capacite_;
 	
-	public Carafe(int co, int ca) {  
-		contenu_ = co; capacite_ = ca;
+	public Carafe(int co, int ca) throws Exception {  
+		if (co <= ca) {
+			contenu_ = co; capacite_ = ca;
 		}
-	public Carafe() {Lire();}
+		else {
+			throw new Exception("Trop de contenu!");
+		}
+		}
 	
-	private void Lire() {
-		contenu_ = Keyboard.getInt("Entrez le jour");
-		capacite_ = Keyboard.getInt("Entrez le mois");
+	public Carafe() throws Exception {Lire();}
+	
+	private void Lire() throws Exception {
+		int co = Keyboard.getInt("Entrez le contenu");
+		int ca = Keyboard.getInt("Entrez la capacité");
+		
+		if (co <= ca) {
+			contenu_ = co; capacite_ = ca;
+		}
+		else {
+			throw new Exception("Trop de contenu!");
+		}
 		}
 	
 	public void Remplir(int co) {
@@ -49,7 +62,7 @@ public class Carafe {
 		return capacite_;
 	}
 	
-	public void Transvaser(Carafe c1, Carafe c2) {
+	public static void Transvaser(Carafe c1, Carafe c2) {
 		int cont1 = c1.Contenu();
 		int cont2 = c2.Contenu();
 		int cap2 = c2.Capacite();

@@ -1,7 +1,22 @@
 package td5;
 
 public class TestCarafe {
-	Carafe c1 = new Carafe(1, 1);
-	Carafe c2 = new Carafe(1, 2);
+	public static void main(String[] args) throws Exception {
+		Carafe c1 = new Carafe(10, 10);
+		Carafe c2 = new Carafe();
+		System.out.println(c1.Contenu());
+		System.out.println(c1.Capacite());
+		System.out.println(c2.Contenu());
+		System.out.println(c2.Capacite());
+		
+		Carafe.Transvaser(c1, c2);
+		
+		System.out.println(c1.Contenu());
+		System.out.println(c1.Capacite());
+		System.out.println(c2.Contenu());
+		System.out.println(c2.Capacite());
+		
+	}
+	
 	
 }
