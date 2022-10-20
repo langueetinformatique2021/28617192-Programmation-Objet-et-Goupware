@@ -24,5 +24,21 @@ public class Carafe {
 		}
 	}
 	
+	public void Vider(int co) {
+		if (contenu_ - co >= 0) {
+			contenu_ -= co;
+		}
+		else {
+			System.out.println("Il ne reste pas autant dans la carafe");
+		}
+	}
+	
+	public int Contenu() {
+		return contenu_;
+	}
+	
+	public int Capacite() {
+		return capacite_;
+	}
 
 }
