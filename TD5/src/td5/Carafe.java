@@ -51,6 +51,14 @@ public class Carafe {
 		}
 	
 	/**
+	 * Modifie son propre contenu
+	 * @param int co nouvelle valeur du contenu
+	 */
+	private void ModifContenu(int co) {
+		contenu_ = co;
+	}
+	
+	/**
 	 * Remplit la carafe de la quantité précisée, si possible
 	 * @param int co la qantité précisée
 	 */
@@ -125,6 +133,27 @@ public class Carafe {
 		else {
 			c2.Remplir(maxTrans);
 			c1.Vider(maxTrans);
+		}
+	}
+	
+	/**
+	 * Transvaser tout ce que l'on peut de l'objet vers une autre carafe
+	 * @param Carafe c2 l'autre carafe
+	 */
+	public void Transvaser(Carafe c2) {
+		int cont1 = this.Contenu();
+		int cont2 = c2.Contenu();
+		int cap2 = c2.Capacite();
+		
+		int maxTrans = cap2 - cont2;
+		if (maxTrans > cont1) {
+			c2.Remplir(cont1);
+			this.Vider();
+		}
+		else {
+			c2.Remplir(maxTrans);
+			this.Vider(maxTrans);
+		
 		}
 		
 	}
