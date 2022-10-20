@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author marceau
+ *
+ */
+module test {
+}
