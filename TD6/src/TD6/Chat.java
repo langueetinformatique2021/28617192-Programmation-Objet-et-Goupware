@@ -1,25 +1,22 @@
 package TD6;
 
-public class Chat extends Felin {
+public class Chat extends Felin implements Domesticable {
+	String nom = null;
+	
 	public Chat(String type) {
 		super(type);
 	}
-
-	/** gestion de l'état de domestication d'un animal */
 	
-	public interface Domesticable {
-		String nom = null;
-		
-		/** Domestiquer un animal et lui donner un nom
-		* @param nom nom de l'animal */
-		public default void domestiquer(String nom_) {
-			Domesticable.nom = nom_;
-		}
-		
-		/** Rend le nom de l'animal
-		* @return nom de l'animal */
-		public default String nom() {
-			return Domesticable.nom;
-		}
-	} 
+	public void crie() {
+		System.out.println("Miaou");
+	}
+	
+	public void domestiquer(String nom_) {
+		domestique = true;
+		nom = nom_;
+	}
+	
+	public String nom() {
+		return nom;
+	}
 }
