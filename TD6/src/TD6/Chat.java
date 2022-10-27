@@ -1,14 +1,23 @@
 package TD6;
 
 public class Chat extends Felin implements Domesticable {
-	String nom = null;
+	private String nom;
+	
+	public Chat() {
+		super("Chat");
+	}
 	
 	public Chat(String type) {
 		super(type);
 	}
 	
 	public void crie() {
-		System.out.println("Miaou");
+		if (domestique) {
+			System.out.println("Je m'appelle '" + nom + "' miaou");
+		}
+		else {
+			super.crie();
+		}
 	}
 	
 	public void domestiquer(String nom_) {
