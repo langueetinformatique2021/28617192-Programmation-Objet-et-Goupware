@@ -25,7 +25,6 @@ public class TestCarafe {
 		System.out.println(c2.Contenu());
 		System.out.println(c2.Capacite());
 		
-		
 	}
 	
 	
