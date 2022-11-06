@@ -1,3 +1,6 @@
+/**
+ * Tests
+ */
 public class Main {
     public static void main(String[] args) {
         Peuplier peuplier = new Peuplier("Paul le peuplier");
@@ -13,11 +16,5 @@ public class Main {
         System.out.println(peuplier.equivaut(peuplier2));
         peuplier.changeSeason(2);
         System.out.println(peuplier.equivaut(peuplier2));
-
-
-
-
-
-
     }
 }

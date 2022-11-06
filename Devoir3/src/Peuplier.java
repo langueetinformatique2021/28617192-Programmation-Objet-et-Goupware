@@ -28,7 +28,9 @@ public class Peuplier extends Arbre {
         this(name, Seasons.PRINTEMPS);
     }
 
-    /** Méthode protéhée permettant d'agir selon la saison
+    /**
+     * Méthode protégée permettant d'agir selon la saison
+     * Sert à l'instanciation et au changement de saison
      * @see Seasons
      */
     protected void selonSaison() {
@@ -78,21 +80,35 @@ public class Peuplier extends Arbre {
     }
 
     /**
-     * Méthode pour a
-     * @return
+     * Méthode pour afficher si le peuplier est en fleur, a partir de la méthode isFleuri()
+     * @return String contenant l'etat de floraison du peuplier
      */
     public String fleurit() {
         return this.isFleuri() ? "Je fleuris" : "Je ne fleuris pas";
     }
 
+    /**
+     * Méthode pour afficher les caractéristiques du peuplier, a partir de la méthode afficher() de la classe mère
+     * ajoute l'etat de floraison du peuplier
+     * @return String contenant les caractéristiques du peuplier
+     * @see Vegetal#afficher()
+     */
     public String afficher() {
         return super.afficher() + this.fleurit() + "\n";
     }
 
+    /**
+     * Méthode pour afficher si le peuplier perd ses feuilles, a partir de la saison
+     * @return boolean true si le peuplier perd ses feuilles, false sinon
+     */
     protected boolean feuillesTombent() {
         return this.getSeason() == Seasons.AUTOMNE;
     }
 
+    /**
+     * Méthode pour afficher si le peuplier perd ses feuilles, a partir de la méthode feuillesTombent()
+     * @return String contenant l'etat des feuilles du peuplier
+     */
     public String tombeFeuilles() {
         return this.feuillesTombent() ? "Mes feuilles tombent" : "Mes feuilles ne tombent pas";
     }
