@@ -1,38 +1,24 @@
 package TD7;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Date a = new Date();
-		GregorianCalendar b = new GregorianCalendar();
+		long randomNum = ThreadLocalRandom.current().nextInt(5000, 15000 + 1);
 
-//		System.out.println(a);
-//		System.out.println(b.get(Calendar.HOUR));
-//		System.out.println(b.get(Calendar.MINUTE));
-//		System.out.println(b.get(Calendar.SECOND));
-//
-//		System.out.println(b.get(Calendar.DATE));
-//		System.out.println(b.get(Calendar.MONTH));
-//		System.out.println(b.get(Calendar.YEAR));
-//		
-//		System.out.println(b.getTime());
-		
 		Calendar2 c = new Calendar2();
 		c.creation();
-
-		try {
-		    Thread.sleep(10000);
-		} catch (InterruptedException ie) {}
-		
 		c.afficher();
 		System.out.println(c.iscours());
-		System.out.println(c.duree());
 
-		
 
-		
+		try {
+			System.out.println(randomNum/1000.0 + " secondes d'attentes");
+		    Thread.sleep(randomNum);
+		} catch (InterruptedException ie) {
+			//
+		}
+
+		System.out.println(c.duree() + " secondes");		
 	}
 }

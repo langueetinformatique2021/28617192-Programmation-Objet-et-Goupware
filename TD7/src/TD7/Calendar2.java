@@ -1,8 +1,7 @@
 package TD7;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
-
+@SuppressWarnings("deprecation")
 public class Calendar2 extends Calendar {
 	protected Date creation;
 	boolean cours;
@@ -24,8 +23,8 @@ public class Calendar2 extends Calendar {
 		return false;
 	}
 	
-	public boolean iscours() {
-		return cours;
+	public String iscours() {
+        return _iscours() ? "Fait en cours" : "Fait en dehors du cours";
 	}
 	
 	private String TimeToString(Date d) {
@@ -39,22 +38,69 @@ public class Calendar2 extends Calendar {
 		String D = Integer.toString(d.getDay());
 		String M = Integer.toString(d.getMonth());
 		String Y = Integer.toString(d.getYear()+1900);
-		return D + "/" + M + "/" + Y;	
-
+		return D + "/" + M + "/" + Y;
 	}
 	
 	public void creation() {
-		System.out.println(TimeToString(this.creation));
+		System.out.println("Heure : " + TimeToString(this.creation));
 	}
 	
 	public void afficher() {
-		System.out.println(DateToString(new Date()));
-		System.out.println(TimeToString(new Date()));
+		System.out.println("Date: " + DateToString(new Date()) 
+				+ "\t Heure : " + TimeToString(new Date()));
 	}
 	
 	public int duree() {
 		Date d = new Date();
 		return ((int) (d.getTime() - this.creation.getTime()))/1000;
+	}
+
+	@Override
+	protected void computeTime() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void computeFields() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void add(int field, int amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void roll(int field, boolean up) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getMinimum(int field) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getMaximum(int field) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getGreatestMinimum(int field) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int getLeastMaximum(int field) {
+		// TODO Auto-generated method stub
+		return 0;
 	}
 
 
