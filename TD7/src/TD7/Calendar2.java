@@ -51,6 +51,11 @@ public class Calendar2 extends Calendar {
 		System.out.println(DateToString(new Date()));
 		System.out.println(TimeToString(new Date()));
 	}
+	
+	public int duree() {
+		Date d = new Date();
+		return ((int) (d.getTime() - this.creation.getTime()))/1000;
+	}
 
 
 }
