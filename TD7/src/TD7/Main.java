@@ -23,13 +23,9 @@ public class Main {
 		Calendar2 c = new Calendar2();
 		c.creation();
 
-		int millis = 5000;
-
 		try {
-		    Thread.sleep(millis);
-		} catch (InterruptedException ie) {
-		    // ...
-		}
+		    Thread.sleep(10000);
+		} catch (InterruptedException ie) {}
 		
 		c.afficher();
 		System.out.println(c.iscours());
