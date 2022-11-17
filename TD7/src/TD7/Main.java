@@ -11,14 +11,11 @@ public class Main {
 		c.afficher();
 		System.out.println(c.iscours());
 
-
 		try {
 			System.out.println(randomNum/1000.0 + " secondes d'attentes");
 		    Thread.sleep(randomNum);
-		} catch (InterruptedException ie) {
-			//
-		}
+		} catch (InterruptedException ie) {}
 
-		System.out.println(c.duree() + " secondes");		
+		System.out.println(c.duree());		
 	}
 }

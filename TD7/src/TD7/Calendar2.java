@@ -50,9 +50,13 @@ public class Calendar2 extends Calendar {
 				+ "\t Heure : " + TimeToString(new Date()));
 	}
 	
-	public int duree() {
+	private double _duree() {
 		Date d = new Date();
-		return ((int) (d.getTime() - this.creation.getTime()))/1000;
+		return (d.getTime() - this.creation.getTime()) /1000.0;
+	}
+	
+	public String duree() {
+		return "Le calendrier a été créé il y a "+ _duree() + " secondes";
 	}
 
 	@Override
