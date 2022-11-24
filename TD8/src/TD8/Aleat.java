@@ -1,5 +1,8 @@
 package TD8;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /** Générateur de nombres entiers naturels aleatoires
  * @author montacie
  */
@@ -21,5 +24,16 @@ public class Aleat {
 	 */
 	public int get() {
 		return (int)(Math.random() * this.maximum) + 1;
+	}
+	
+	public ArrayList<Integer> lancerDes() {
+		ArrayList<Integer> list = new ArrayList<>();
+		int i = 0;
+		do {
+			i++;
+			list.add(this.get());
+		} while (i < 3);
+		return list;
+				
 	}
 }
