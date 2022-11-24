@@ -25,8 +25,9 @@ public class LancerDes extends Aleat {
 	}
 	
 	private void test421(ArrayList<Integer> al, String nom) throws E421 {
+		if (al.get(0) == 4) if (al.get(1) == 2)if (al.get(2) == 1) throw new E421(al, nom);
 		if (al.contains(4)) if (al.contains(2)) if (al.contains(1)) throw new E421(nom, al);
-		}
+	}
 
 
 
