@@ -13,7 +13,6 @@ public class LancerDes extends Aleat {
 		this.nom = nom;
 	}
 	
-
 	public ArrayList<Integer> lancerDes() throws E421 {
 		ArrayList<Integer> list = new ArrayList<>();
 		int i = 0;
@@ -23,7 +22,6 @@ public class LancerDes extends Aleat {
 		} while (i < 3);
 		this.test421(list, nom);
 		return list;
-				
 	}
 	
 	private void test421(ArrayList<Integer> al, String nom) throws E421 {

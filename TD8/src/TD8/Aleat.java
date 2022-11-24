@@ -1,8 +1,5 @@
 package TD8;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /** Générateur de nombres entiers naturels aleatoires
  * @author montacie
  */
