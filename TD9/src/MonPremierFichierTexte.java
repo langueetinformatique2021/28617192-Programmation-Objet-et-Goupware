@@ -11,7 +11,7 @@ public class MonPremierFichierTexte {
 
 
         BufferedWriter writer = new BufferedWriter(new FileWriter("Nom.txt"));
-        writinglist(al, writer);
+        writingList(al, writer);
         writer.close();
 
         BufferedReader reader = new BufferedReader(new FileReader("Nom.txt"));
@@ -21,7 +21,7 @@ public class MonPremierFichierTexte {
 
 
     }
-    public static void writinglist(ArrayList<String> al, BufferedWriter writer) throws IOException {
+    public static void writingList(ArrayList<String> al, BufferedWriter writer) throws IOException {
         for (String str : al) {
             writer.write(str);
             writer.newLine();
@@ -38,7 +38,6 @@ public class MonPremierFichierTexte {
             else {
                 return false;
             }
-
          }
          return true;
 
