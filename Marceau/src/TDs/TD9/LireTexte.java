@@ -54,15 +54,15 @@ import java.util.*;
         public String readWord() throws IOException {
             if (tok.hasMoreTokens()) {
                             return tok.nextToken();
-                        } else {
-                            ligne = entree.readLine();
-                            if (ligne == null) {
-                                return null;
-                            } else {
-                                tok = new StringTokenizer(ligne);
-                                return tok.nextToken();
-                            }
-                        }
+            } else {
+                ligne = entree.readLine();
+                if (ligne == null) {
+                    return null;
+                } else {
+                    tok = new StringTokenizer(ligne);
+                    return tok.nextToken();
+                }
+            }
 
-                    }
+        }
 }
