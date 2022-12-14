@@ -19,9 +19,13 @@ public class TestLire {
                 LireTexte lire = new LireTexte(path);
 
                 String mot;
+                int unsurvingt = 0; // On va éviter d'afficher tous les mots
 
                 while ((mot = lire.readWord()) != null) {
-                    System.out.println(mot);
+                    if (unsurvingt == 0) {
+                        System.out.println(mot);
+                    }
+                    unsurvingt = (unsurvingt + 1) % 20;
                 }
 
                 System.out.println("Fin du fichier");
