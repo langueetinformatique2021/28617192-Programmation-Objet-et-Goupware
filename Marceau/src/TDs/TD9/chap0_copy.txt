@@ -1,0 +1,125 @@
+﻿The Project Gutenberg EBook of Candide, by Voltaire
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org/license
+Title: Candide
+Author: Voltaire
+Release Date: November, 2003 [Etext #4650]
+[This file was first posted on February 20, 2002]
+[Last updated: August 7, 2022]
+Language: French
+*** START OF THIS PROJECT GUTENBERG EBOOK CANDIDE ***
+The Project Gutenberg Etext of Candide
+by Voltaire
+(#6 in our series by Voltaire)
+***
+Produced by Carlo Traverso
+We thank the Bibliotheque Nationale de France that has made available
+the image files at www://gallica.bnf.fr, authorizing the preparation
+of the etext through OCR.
+Nous remercions la Bibliothèque Nationale de France qui a mis à
+dispositions les images dans www://gallica.bnf.fr, et a donné
+l'authorization à les utilizer pour preparer ce texte.
+                                OEUVRES
+                                  DE
+                               VOLTAIRE.
+                              TOME XXXIII
+                 DE L' IMPRIMERIE DE A. FIRMIN DIDOT,
+                           RUE JACOB, Nº 24.
+                                OEUVRES
+                                  DE
+                               VOLTAIRE
+                 PRÉFACES, AVERTISSEMENTS, NOTES, ETC.
+                            PAR M. BEUCHOT.
+                             TOME XXXIII.
+                            ROMANS. TOME I.
+                               A PARIS,
+                        CHEZ LEFÈVRE, LIBRAIRE,
+            RUE DE L'ÉPERON, Kº 6. WERDET ET LEQUIEN FILS,
+                        RUE DU BATTOIR, Nº 20.
+                              MDCCCXXIX.
+                               CANDIDE,
+                                  ou
+                             L'OPTIMISME.
+Préface de l'Éditeur
+_Candide_ parut au plus tard en mars 1759.  Le roi de Prusse en
+accuse réception par sa lettre du 28 du mois d'avril.
+Voltaire en avait envoyé le manuscrit à la duchesse de La
+Vallière, qui lui fit répondre qu'il aurait pu se passer d'y
+mettre tant d'indécences, et qu'un écrivain tel que lui n'avait
+pas besoin d'avoir recours à cette ressource pour se procurer des
+lecteurs.
+Beaucoup d'autres personnes furent scandalisées de _Candide_, et
+Voltaire désavoua cet ouvrage, qu'il appelle lui-même une
+coïonnerie.  Il ne faut pas, au reste, prendre à la lettre son
+titre d'optimisme.  L'optimisme, dit-il ailleurs[1], n'est qu'une
+fatalité désespérante.
+  [1] _Homélie sur l'athéisme_.  Voyez les _Mélanges_, année
+  1767; et aussi, tome XII, une des notes du troisième _Discours
+  sur l'homme_.
+Voltaire écrivit, sous le nom de Mead, une lettre relative à
+Candide, qui fut insérée dans le _Journal encyclopédique_, du 15
+juillet 1759: on la trouvera dans les Mélanges, à cette date.
+C'est à Thorel de Campigneulles, mort en 1809, qu'çn attribue
+une _Seconde partie de Candide_, publiée en 1761, et plusieurs
+fois réimprimée à la suite de l'ouvrage de Voltaire, comme étant
+de lui.  On l'a même admise dans une édition intitulée:
+_Collection complète des Oeuvres de M, de Voltaire, 1764, in-12_.
+L'édition de Candide, 1778, avec des figures dessinées et gravées
+par Daniel Chodowicky, contient les deux parties.
+Le _Remercîment de Candide à M. de Voltaire_ (par Marconnay) est
+de 1760.
+Linguet publia, en 1766, la _Cacomonade, histoire politique et
+morale, traduite de l'allemand, du docteur Pangloss, par le
+docteur lui-même, depuis son retour de Constantinople_, 1766,
+in-12; nouvelle édition, augmentée d'une lettre du même auteur,
+1766, in-12.  Un arrêt de la cour royale de Paris, du 16 novembre
+1822 (inséré dans le _Moniteur_ du 26 mars 1825), ordonne la
+destruction de la _Canonnade, ou Histoire du Mal de Naples, par
+Linguet_.  Ce n'est pas la première fois que les ouvrages
+condamnés sont mal désignés dans les jugements.  L'arrêt de la
+cour du parlement, du 6 août 1761, ordonne de lacérer et brûler
+le tome XIII du Commentaire de Salmeron, qui n'a que quatre
+volumes.
+_Candide en Danemarck, ou l'Optimisme des honnêtes gens_, est
+d'un auteur qu'on ne connaît pas.
+_Antoine Bernard et Rosalie, ou le Petit Candide_, a paru en
+1796, un volume in-i8.
+Le _Voyage de Candide fils au pays d'Eldorado, vers la fin du
+dix-huitième siècle, pour servir de suite aux aventures de M. son
+père_, an XI-1803, a deux volumes in-8º.
+Le chapitre XXVI de _Candide_ a été imité, en 1815, par Lemontey,
+dans un article intitulé: _Le Carnaval de Vénise_.  J'ai renoncé
+à reproduire ce petit morceau, lorsque j'ai vu l'annonce des
+_Oeuvres de Lemonley_, où sans doute on le trouvera.
+J.-J.  Rousseau prétendait[2] que c'est sa _Lettre sur la
+Providence_ qui a donné naissance à _Candide_; _Candide en est la
+réponse_.  Voltaire en avait fait _une de deux pages où il bat la
+campagne, et Candide parut dix mois après_.
+  [2] Lettre de J.  J.  Rousseau au prince de Wirtemberg, du 11
+  mars 1764.
+Ce que Rousseau appelle sa _Lettre sur la Providence_, est sa
+lettre à Voltaire du 18 août 1756; la réponse de Voltaire est du
+21 septembre 1766; Candide ne vit le jour que vingt-sept à
+vingt-neuf mois plus tard.
+                ------
+Les notes sans signature, et qui sont indiquées par des lettres,
+sont de Voltaire.
+Les notes signées d'un K sont des éditeurs de Kehl, MM. Condorcet
+et Decroix.  Il est impossible de faire rigoureusement la part de
+chacun.
+Les additions que j'ai faites aux notes de Voltaire ou aux notes
+des éditeurs de Kehl, en sont séparées par un--, et sont, comme
+mes notes, signées de l'initiale de mon nom.
+                                                 BEUCHOT.
+4 octobre 1829.
+                               CANDIDE,
+                                  ou
+                             L'OPTIMISME,
+                         TRADUIT DE L'ALLEMAND
+                        DE M. LE DOCTEUR RALPH,
+                          AVEC LES ADDITIONS
+      QU'ON A TROUVÉES DANS LA POCHE DU DOCTEUR, LORSQU'IL MOURUT
+                     À MINDEN, L'AN DE GRÂCE 1759
+                                 1759
