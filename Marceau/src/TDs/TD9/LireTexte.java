@@ -6,15 +6,20 @@ import java.util.*;
  * @author montacie
  */
     public class LireTexte {
-    private BufferedReader entree;
+        private BufferedReader entree;
+        private String nomFichier;
         private String ligne;
         private StringTokenizer tok;
+
+
         /** Création d'une nouvelle instance de LireTexte
          * @param ft nom du fichier texte
+         *           (chemin relatif ou absolu)
          */
         public LireTexte(String ft) throws FichierVide, IOException {
             try {
                 entree = new BufferedReader(new FileReader(ft));
+                nomFichier = ft.split("/")[ft.split("/").length - 1];
             } catch (FileNotFoundException e) {
                 System.out.println("Fichier " + ft + " non trouvé");
                 System.exit(42);
@@ -32,7 +37,7 @@ import java.util.*;
         protected void Ouvrir() throws IOException, FichierVide {
             ligne = entree.readLine();
             if (ligne == null) {
-                throw new FichierVide();
+                throw new FichierVide(nomFichier);
             }
         }
         /** Fermeture du fichier

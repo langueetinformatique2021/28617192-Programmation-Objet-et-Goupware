@@ -1,6 +1,4 @@
 package TDs.TD9;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,10 +26,6 @@ public class TestLire {
 
                 System.out.println("Fin du fichier");
 
-            } catch (FichierVide e) {
-                System.out.println("Fichier vide");
-            } catch (IOException e) {
-                System.out.println("Erreur d'entrée/sortie");
             } catch (Exception e) {
                 System.out.println(e.getMessage());
             }
@@ -56,10 +50,6 @@ public class TestLire {
                 System.out.println(mot);
             }
 
-        } catch (FichierVide e) {
-            System.out.println("Fichier vide");
-        } catch (IOException e) {
-            System.out.println("Erreur d'entrée/sortie");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
