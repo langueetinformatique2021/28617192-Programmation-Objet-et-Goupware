@@ -1,22 +1,22 @@
+package TDs.TD9;
+
 import java.io.*;
 import java.util.*;
 /** Lecture des mots d'un fichier-texte
  * @author montacie
  */
     public class LireTexte {
-        private final String NomFichier;
-        private BufferedReader entree;
+    private BufferedReader entree;
         private String ligne;
         private StringTokenizer tok;
         /** Création d'une nouvelle instance de LireTexte
          * @param ft nom du fichier texte
          */
         public LireTexte(String ft) throws FichierVide, IOException {
-            NomFichier = ft;
             try {
-                entree = new BufferedReader(new FileReader(NomFichier));
+                entree = new BufferedReader(new FileReader(ft));
             } catch (FileNotFoundException e) {
-                System.out.println("Fichier " + NomFichier + " non trouvé");
+                System.out.println("Fichier " + ft + " non trouvé");
                 System.exit(42);
             }
             this.Ouvrir();
