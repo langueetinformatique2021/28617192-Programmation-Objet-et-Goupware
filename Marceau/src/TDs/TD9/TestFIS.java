@@ -34,6 +34,11 @@ public class TestFIS {
 
             System.out.println(FIS9.compareTo(FIS9_2));
 
+            FIS9 = new FileInputStreamTP9(path + "chap0.txt");
+            FIS9_2 = new FileInputStreamTP9(path + "vide.txt");
+
+            System.out.println(FIS9.compareTo(FIS9_2));
+
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         }

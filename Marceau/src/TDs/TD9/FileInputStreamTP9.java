@@ -103,9 +103,13 @@ public class FileInputStreamTP9 extends FileInputStream {
      * @see FileInputStreamTP9#copie(File)
      */
     public boolean compareTo(FileInputStreamTP9 fis) throws IOException {
-            int c1, c2;
-            while ((c1 = this.read()) != -1 && (c2 = fis.read()) != -1) {
-                if (c1 != c2) {
+        if (this.hashCode() == fis.hashCode()) {
+            return true;
+        }
+        int c1;
+
+        while ((c1 = this.read()) != -1) {
+                if (c1 != fis.read()) {
                     return false;
                 }
             }
