@@ -16,9 +16,9 @@ public class TestToutUnTexte {
 
         texte.chercherVoir("rothbanner", 10);
 
-        System.out.println(texte.chercherER("\\wle"));
+        System.out.println(texte.chercherER("parl\\w+?\\b"));
 
-        texte.chercherVoirER("le", 10);
+        System.out.println(texte.chercherVoirER("parl\\w+?\\b", 10));
 
     }
 }

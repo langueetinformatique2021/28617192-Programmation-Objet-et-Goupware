@@ -6,6 +6,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static java.lang.Math.max;
 
@@ -124,31 +126,21 @@ public class LireToutUnTexte extends BufferedReader {
 
 
     public int chercherER(String regex) {
-        return this.texte.split(regex).length - 1;
+        List<String> allMatches = new ArrayList<>();
+        Matcher m = Pattern.compile(regex).matcher(texte);
+        while (m.find()) {
+            allMatches.add(m.group());
+        }
+        return allMatches.size();
     }
 
     public List<String> chercherVoirER(String regex, int Contexte_mots) {
-        int occurences = chercherER(regex);
-        List<String> contextes = new ArrayList<>();
-
-        String contexte;
-        if(occurences > 0) {
-            int i = 0;
-            int index_end = 0;
-            while (i < occurences) {
-                int index_start = max(texte.indexOf(regex, index_end) - (Contexte_mots), 0) ;
-                index_end = texte.indexOf(regex, index_end) + (Contexte_mots + regex.length());
-
-                contexte = texte.substring(index_start,index_end);
-                System.out.println(contexte);
-                contextes.add(contexte);
-                i++;
-            }
+        List<String> allMatches = new ArrayList<>();
+        Matcher m = Pattern.compile(regex).matcher(texte);
+        while (m.find()) {
+            allMatches.add(m.group());
         }
-        else {
-            System.out.println("la chaine cherchée n'est pas dans le texte");
-        }
-        return contextes;
+        return allMatches;
     }
 
 }
