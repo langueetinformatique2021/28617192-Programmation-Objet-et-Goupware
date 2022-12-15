@@ -13,7 +13,7 @@ public class LireToutUnTexte extends BufferedReader {
     public LireToutUnTexte(String path) throws FileNotFoundException {
         super(new FileReader(path));
         String ligne;
-        this.lignes = new ArrayList<String>();
+        this.lignes = new ArrayList<>();
 
         try {
             while ((ligne = this.readLine()) != null) {
@@ -50,9 +50,9 @@ public class LireToutUnTexte extends BufferedReader {
         return texte.split(mot).length - 1;
     }
 
-    public int chercher(String mot, int mode) {
+    public int chercher(String mot, int ignoredMode) {
         int nbOccurences = 0;
-        int j = 0;
+        int j;
         String ligne;
         mot = mot.toLowerCase();
 
@@ -97,7 +97,7 @@ public class LireToutUnTexte extends BufferedReader {
     public List<String> chercherVoir(String chaine, int Contexte_mots) {
         chaine = chaine.toLowerCase();
         int occurences = chercher(chaine);
-        List<String> contextes = new ArrayList<String>();
+        List<String> contextes = new ArrayList<>();
 
         String contexte;
         if(occurences > 0) {
