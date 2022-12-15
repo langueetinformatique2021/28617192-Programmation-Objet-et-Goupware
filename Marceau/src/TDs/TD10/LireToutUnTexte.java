@@ -6,6 +6,9 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+
+import static java.lang.Math.max;
+
 public class LireToutUnTexte extends BufferedReader {
     private final List<String> lignes;
     private final int nbLignes;
@@ -79,7 +82,7 @@ public class LireToutUnTexte extends BufferedReader {
         if(texte.contains(chaine)) {
 
 
-            int index_start = texte.indexOf(chaine) - (Contexte_mots) ;
+            int index_start = max(texte.indexOf(chaine) - (Contexte_mots), 0) ;
             int index_end = texte.indexOf(chaine) + (Contexte_mots + chaine.length());
 
             contexte = texte.substring(index_start,index_end);
@@ -104,8 +107,37 @@ public class LireToutUnTexte extends BufferedReader {
             int i = 0;
             int index_end = 0;
             while (i < occurences) {
-                int index_start = texte.indexOf(chaine, index_end) - (Contexte_mots) ;
+                int index_start = max(texte.indexOf(chaine, index_end) - (Contexte_mots), 0) ;
                 index_end = texte.indexOf(chaine, index_end) + (Contexte_mots + chaine.length());
+
+                contexte = texte.substring(index_start,index_end);
+                System.out.println(contexte);
+                contextes.add(contexte);
+                i++;
+            }
+        }
+        else {
+            System.out.println("la chaine cherchée n'est pas dans le texte");
+        }
+        return contextes;
+    }
+
+
+    public int chercherER(String regex) {
+        return this.texte.split(regex).length - 1;
+    }
+
+    public List<String> chercherVoirER(String regex, int Contexte_mots) {
+        int occurences = chercherER(regex);
+        List<String> contextes = new ArrayList<>();
+
+        String contexte;
+        if(occurences > 0) {
+            int i = 0;
+            int index_end = 0;
+            while (i < occurences) {
+                int index_start = max(texte.indexOf(regex, index_end) - (Contexte_mots), 0) ;
+                index_end = texte.indexOf(regex, index_end) + (Contexte_mots + regex.length());
 
                 contexte = texte.substring(index_start,index_end);
                 System.out.println(contexte);
